@@ -1,0 +1,34 @@
+$time_size: 0.75rem;
+
+.container {
+  @include flexColumn(flex-start);
+
+  border-top: 4px solid #02cab9;
+  padding: 10px;
+
+  .title {
+    @include body2;
+
+    padding: 10px 0;
+  }
+
+  .time {
+    font-size: 0.75rem;
+    padding: 10px 0;
+    color: #b6b6b6;
+    white-space: nowrap;
+
+    @include laptop {
+      font-size: 1rem;
+    }
+  }
+
+  .time__available {
+    color: #02cab9;
+    font-weight: 700;
+  }
+}
+
+.disabled {
+  opacity: 0.2;
+}

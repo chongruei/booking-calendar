@@ -1,0 +1,11 @@
+.container {
+  @include flexColumn(flex-start, center);
+
+  .title {
+    @include head2;
+
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}

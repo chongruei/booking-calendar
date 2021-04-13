@@ -1,0 +1,34 @@
+// breakpoints:
+// value         |0px     414px    768px    1280px   1920px
+// key           |xs      sm       md       lg       xl
+// screen width  |--------|--------|--------|--------|-------->
+// range         |   xs   |   sm   |   md   |   lg   |   xl
+$screen-minimum: 375px;
+$screen-sm: 414px;
+$screen-md: 768px;
+$screen-lg: 1280px;
+$screen-xl: 1920px;
+
+@mixin desktop {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}

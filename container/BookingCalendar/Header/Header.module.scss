@@ -1,0 +1,30 @@
+.container {
+  @include flexColumn(center, center);
+
+  width: 100%;
+
+  @include laptop {
+    @include flexRow(center, center);
+  }
+
+  .date__selector {
+    @include flexRow(flex-start, center);
+
+    width: 100%;
+    margin-bottom: 10px;
+
+    .date__selected {
+      @include body2;
+
+      margin-left: 15px;
+    }
+  }
+
+  .timezone {
+    @include body3;
+
+    text-align: right;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+$black: #000000;
+$white: #ffffff;
+
+// light 背景色
+$bg-color: #fff;
+$fg-color: #f5f5f5;
+
+$bg-colors: (
+  'light': #fff,
+  'dark': #f5f5f5,
+);
+
+// 字色
+$font-colors: (
+  'white': '#ffffff',
+  'first': #333333,
+  'second': #666666,
+  'third': #999999,
+  'fourth': #cccccc,
+);
+
+// 標籤描邊色
+$label-color: #d5d5d5;
+
+// 線色
+$bd-color: #ededed;
+
+// 顏色
+$primary: #57dcc5;
+$secondary-1: #ff7c88;
+$secondary-2: #fff7f7;
+$secondary-3: #8de4cd;
+$warning: #ffb710;
+$danger: #ff4556;
+$info: #70a2e4;
+
+// title
+$title-border: #dadada;
